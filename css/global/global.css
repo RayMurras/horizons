@@ -2,6 +2,16 @@
   font-family: 'starz-2016';
   src: url(../../tipografia/tipografia-logo/Starz-2016/starz_2016_by_629lyric-d9y7ma8.ttf);
 }
+*{
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+} 
+body {
+  display: flex;
+  flex-direction: column;
+}
 /*tipografica logo, tipografica em letras maiusculas */
 body{
   background-color: var(--cor-05) !important;
@@ -34,18 +44,28 @@ ul li a:hover{
 
 
 
+
 #footer-bg{
   background-color: var(--cor-01) !important;
 }
 
 .section-footer{
   color: var(--cor-00);
+  text-decoration: none;
+  text-transform: none;
+}
+.section-footer a{
+  text-decoration: none;
+  text-transform: none;
+  color: var(--cor-03) !important;
+}
+#div-copy a{
+  text-transform: uppercase;
+  color: var(--cor-00) !important;
 }
 
 /*manter o footer fixo ao final da tela*/
 footer{
-  bottom: 0;
-  position: absolute;
   width: 100%;
 }
 
