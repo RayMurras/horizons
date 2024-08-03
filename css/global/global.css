@@ -14,7 +14,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 /*aplicando um background no */
 #header-bg{
   background-color: var(--cor-01) !important;
@@ -148,19 +147,6 @@ label{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #footer-bg{
   background-color: var(--cor-01) !important;
 }
@@ -185,7 +171,35 @@ footer{
   width: 100%;
 }
 
+/*CSS página card-1*/
 
+.banner {
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.banner h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.banner .details {
+  position: flex;
+  top: 20px;
+  left: 20px;
+}
+.pricing, .details-card, .included-services, .transfer, .accommodation, .insurance {
+  margin-bottom: 20px;
+}
+.details-card img, .accommodation img {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+}
 
 
 
