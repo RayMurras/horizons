@@ -65,6 +65,7 @@ body{
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--cor-00) !important;
+  text-decoration: none;
 }
 .botao:hover{
   background-color: var(--cor-01);
