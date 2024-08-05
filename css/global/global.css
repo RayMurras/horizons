@@ -2,6 +2,18 @@
   font-family: 'starz-2016';
   src: url(../../tipografia/tipografia-logo/Starz-2016/starz_2016_by_629lyric-d9y7ma8.ttf);
 }
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(./../../tipografia/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(./../../tipografia/Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+  font-style: normal; 
+}
 *{
   box-sizing: border-box;
   padding: 0;
@@ -45,7 +57,7 @@ body{
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--cor-00);
+  color: var(--cor-00) !important;
 }
 .botao:hover{
   background-color: var(--cor-01);
@@ -78,12 +90,14 @@ body{
 .section-footer{
   color: var(--cor-00);
   text-decoration: none;
-  text-transform: none;
 }
 .section-footer a{
   text-decoration: none;
-  text-transform: none;
   color: var(--cor-03) !important;
+}
+.section-footer a:hover{
+  text-decoration: underline;
+  color: var(--cor-00) !important;
 }
 #div-copy a{
   text-transform: uppercase;

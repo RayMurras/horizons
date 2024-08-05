@@ -1,5 +1,6 @@
 main {
   box-sizing: border-box;
+  padding-bottom: 150px;
 }
 /*formulario pesquiza de destino*/
 main .div-bg {
@@ -11,6 +12,16 @@ main .div-bg {
 }
 main .categorias-tab {
   display: flex;
+}
+.elementoX{
+  width: 100%;
+  background-color: var(--cor-00);
+  text-align:end;
+  padding: 10px;
+}
+.elementoX a{
+  text-decoration: none;
+  color: var(--cor-01);
 }
 main .categorias-tab a {
   text-decoration: none;
@@ -31,18 +42,24 @@ main .categorias-tab .categorias-tab-itens:hover {
   color: var(--cor-01);
 }
 #pacotes:focus,
-#voomedida:focus {
+#voomedida:focus,#voohotel:focus {
   background-color: var(--cor-03);
   color: var(--cor-01);
 }
-
+main .div-conteudo-inputs > form{
+  align-items: center;
+}
 main .div-conteudo-inputs > form,
 main .div-conteudo-inputs-viagens > form {
   display: grid;
   grid-template-columns: repeat(5, auto);
   padding: 20px;
-  align-items: center;
 }
+.voohotel > form{
+  grid-template-columns: repeat(3, auto) !important;
+}
+
+
 main .div-conteudo-inputs-viagens input,
 select {
   width: 100%;
@@ -53,13 +70,14 @@ main .div-conteudo-inputs-viagens .div-inputs,main .div-conteudo-inputs .div-inp
   padding: 20px;
 }
 .div-container-viagens .div-botao {
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   padding-left: 20px;
 }
-.div-pax-geral {
-  display: none;
-}
+
+
+
+
+
 
 /*main .div-conteudo-inputs-viagens .div-botao {
 }*/
@@ -78,6 +96,80 @@ main label {
   padding-bottom: 10px;
 }
 
+h2{
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  font-family: 'Poppins-bold';
+}
+
+
+/*Cards do main */
+
+.main-cards-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 30px;
+}
+.main-cards-container a{
+  text-decoration: none;
+  color: var(--cor-01);
+}
+.main-cards-container > .card-modificacoes{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 40px;
+}
+.card-modificacoes img{
+  max-width: 100%;
+  width: 380px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px 0px 0px 5px;
+}
+.div-img-card{
+  overflow: hidden;
+}
+.card-modificacoes{
+  border-radius:5px;
+}
+.card-modificacoes:hover{
+  box-shadow: 1px 1px 10px 1px #1422304d;
+  transition: 0.4s ease;
+}
+.card-modificacoes img,.card-modificacoes{
+  transition: transform 0.4s ease;
+}
+.card-modificacoes:hover img{
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+.card-bg{
+  background-color: var(--cor-00);
+}
+.descricao-viagem{
+  padding: 20px 100px 20px 20px;
+}
+.descricao-viagem h5{
+  font-family: 'Poppins-Bold';
+  padding-bottom: 5px;
+}
+div span.preco{
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.descricao-viagem .botao{
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+
+
 /*media query retirar a sobreposição do formulario de pesquisa*/
 @media (max-width: 980px) {
   main .div-bg {
@@ -90,6 +182,9 @@ main label {
   }
   main .div-conteudo-inputs-viagens > form {
     grid-template-columns: auto;
+  }
+  .voohotel > form{
+    grid-template-columns: initial !important;
   }
   main .estilo-select {
     width: 100%;
@@ -108,3 +203,26 @@ main label {
     flex-direction: column;
   }
 }
+
+@media (max-width: 780px) {
+  .main-cards-container > .card-modificacoes{
+    grid-template-columns: auto;
+  }
+  .card-modificacoes img{
+    max-width: 100%;
+    width: initial;
+    height: 295px;
+    object-fit: fill;
+  
+  }
+  .card-modificacoes img{
+    border-radius: 5px 5px 0px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .main-cards-container{
+    grid-template-columns: auto
+  }
+}
+
+
