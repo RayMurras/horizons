@@ -74,22 +74,22 @@
     <div class="div-bg container">
       <!--categorias-->
       <div class="categorias-tab">
-        <a id="pacotes" href="#" class="categorias-tab-itens">
+        <a id="pacotes" href="#!" class="categorias-tab-itens">
           <div class="elemento">
             <p>Pacotes</p>
           </div>
         </a>
-        <a id="voomedida" href="#" class="categorias-tab-itens">
+        <a id="voomedida" href="#!" class="categorias-tab-itens">
           <div class="elemento">
             <p>viagens à medida</p>
           </div>
         </a>
-        <a href="#voohotel" class="categorias-tab-itens">
+        <a id="voohotel" href="#!" class="categorias-tab-itens">
           <div class="elemento">
             <p>voo + hotel</p>
           </div>
         </a>
-        <a href="#voocarro" class="categorias-tab-itens">
+        <a href="#voocarro" class="categorias-tab-itens naovisivel">
           <div class="elemento">
             <p>voo + carro</p>
           </div>
@@ -167,7 +167,7 @@
                 <label for="origem-label">Origem</label>
                 <div class="input-grupo">
                   <div class="select-wrapper">
-                    <input type="text" list="origem">
+                    <input type="text" list="origem" required>
                     <datalist id="origem">
                       <option value="Lisboa">Lis</option>
                       <option value="Porto">OPO</option>
@@ -183,51 +183,54 @@
                 <label for="passageiros">Passageiros</label>
                 <div class="input-grupo">
                   <div class="select-wrapper">
-                    <div>
-                      <select id="pass">
-                        <option value=""><a href="">1 Quarto, 2 Adultos, 0 Crianças</a></option>
-                      </select>
-                    </div>
-                    <div class="div-pax-geral">
-                      <div class="table-responsive">
-                        <table class="table">
-                          <tr>
-                            <th>Quartos</th>
-                            <th>Adultos</th>
-                            <th>Crianças</th>
-                          </tr>
-                          <tr class="td-room">
-                            <td><i class="fa fa-bed"></i></td>
-                            <td>
-                              <div class="select-wrapper">
-                                <select required name="adults" class="custom-select adults">
-                                  <option value="1">1</option>
-                                  <option selected value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                  <option value="6">6</option>
-                                </select>
-                            </td>
-                            <td>
-                              <div class="select-wrapper">
-                                <select required name="children" class="custom-select children">
+                    <div class="teste-focus">
+                      <a id="pass" class="passteste" href="#!">
+                        <select required>
+                          <option id="resultadoNaTela" value=""><a href="">1 Quarto, 1 Adultos, 0 Crianças</a></option>
+                        </select>
+                      </a>
+                      <div id="paxgeral" class="div-pax-geral naovisivel">
+                        <div id="fechar-div-pax-geral" class="elementoX"><a href="#!">X</a></div>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tr>
+                              <th>Quartos</th>
+                              <th>Adultos</th>
+                              <th>Crianças</th>
+                            </tr>
+                            <tr class="td-room">
+                              <td><i class="fa fa-bed"></i></td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectAdulto" required name="adults" class="custom-select adults" onclick="selecionarAdulto('selectAdulto')">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                  </select>
+                              </td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectCrianca" required name="children" class="custom-select children" onclick="selecionarCrianca('selectCrianca')">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select>
 
-                                  <option value="0">0</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                </select>
-                              
-                              </div>
-                            </td>
+                                </div>
+                              </td>
 
-                          </tr>
-                        </table>
+                            </tr>
+                          </table>
+                        </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -243,25 +246,232 @@
               </div>
             </div>
             <div class="div-botao">
-              <a style="text-decoration: none; margin-top: 30px;" class="botao" href="https://www.google.com">Pesquisar</a>
+              <button class="botao">Pesquisar</button>
             </div>
           </form>
         </div>
       </div>
+
+      <!--voo + hotel-->
+      <div id="target-div3" class="div-container-viagens naovisivel">
+        <div class="div-conteudo-inputs-viagens voohotel">
+          <form name="form1" action="action.php" method="post">
+            <div class="div-inputs">
+              <div class="origem">
+                <label for="origem-label">Origem</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="text" list="origem" required>
+                    <datalist id="origem">
+                      <option value="Lisboa">Lis</option>
+                      <option value="Porto">OPO</option>
+                      <option value="Funchal">Fun</option>
+                      <option value="Ponta Delgada">DEL</option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="origem">
+                <label for="origem-label">Destino</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="text" list="origem" required>
+                    <datalist id="origem">
+                      <option value="Lisboa">Lis</option>
+                      <option value="Porto">OPO</option>
+                      <option value="Funchal">Fun</option>
+                      <option value="Ponta Delgada">DEL</option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="datapartida">
+                <label for="partida-label">Data de partida</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="date" class="estilo-select" placeholder="dd-MM-aaaa">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-inputs">
+              <div class="datapartida">
+                <label for="partida-label">Data de regresso</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="date" class="estilo-select" placeholder="dd-MM-aaaa">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="div-inputs">
+              <div class="passageiros">
+                <label for="passageiros">Passageiros</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <div class="teste-focus">
+                      <a id="pass2" href="#!">
+                        <select required>
+                          <option id="resultadoNaTela2" value=""><a href="">1 Quarto, 1 Adultos, 0 Crianças</a></option>
+                        </select>
+                      </a>
+                      <div id="paxgeral2" class="div-pax-geral naovisivel">
+                        <div id="fechar-div-pax-geral2" class="elementoX"><a href="#!">X</a></div>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tr>
+                              <th>Quartos</th>
+                              <th>Adultos</th>
+                              <th>Crianças</th>
+                            </tr>
+                            <tr class="td-room">
+                              <td><i class="fa fa-bed"></i></td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectAdulto2" required name="adults" class="custom-select adults" onclick="selecionarAdulto('selectAdulto2')">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                  </select>
+                              </td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectCrianca2" required name="children" class="custom-select children" onclick="selecionarCrianca('selectCrianca2')">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select>
+
+                                </div>
+                              </td>
+
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-botao">
+              <button class="botao">Pesquisar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
 
     <div class=" container">
-      <h1>Hellop</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a labore officiis at quisquam voluptate, error sit corporis ratione delectus omnis magnam est molestiae impedit voluptatem animi ut fugit eaque.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a labore officiis at quisquam voluptate, error sit corporis ratione delectus omnis magnam est molestiae impedit voluptatem animi ut fugit eaque.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a labore officiis at quisquam voluptate, error sit corporis ratione delectus omnis magnam est molestiae impedit voluptatem animi ut fugit eaque.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a labore officiis at quisquam voluptate, error sit corporis ratione delectus omnis magnam est molestiae impedit voluptatem animi ut fugit eaque.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit a labore officiis at quisquam voluptate, error sit corporis ratione delectus omnis magnam est molestiae impedit voluptatem animi ut fugit eaque.</p>
+      <h2 class="cor-01">Viagens em Destaque</h2>
+      <!--Cards-->
+      <div class="main-cards-container">
+        <div class="card-bg card-modificacoes">
+          <a href="">
+            <div class="div-img-card"><img src="./../images/espanha-card.jpg" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">IBIZA</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">899€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="#" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+        <div class="card-bg card-modificacoes">
+          <a href="">
+            <div class="div-img-card"><img src="./../images/espanha-card.jpg" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">ESPANHA</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">899€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="#" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+        <div class="card-bg card-modificacoes">
+          <a href="">
+            <div class="div-img-card"><img src="./../images/espanha-card.jpg" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">ESPANHA</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">899€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="#" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+        <div class="card-bg card-modificacoes">
+          <a href="">
+            <div class="div-img-card"><img src="./../images/espanha-card.jpg" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">ESPANHA</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">899€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="#" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     </div>
   </main>
-
+  <div>
+    <a href=""><img style="width: 100%; display: block;" src="./../images/especial-ibiza4.svg" alt="imagem ibiza"></a>
+  </div>
 
 
 
