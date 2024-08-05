@@ -1,0 +1,110 @@
+main {
+  box-sizing: border-box;
+}
+/*formulario pesquiza de destino*/
+main .div-bg {
+  background-color: var(--cor-03);
+  min-height: 200px;
+  z-index: 99;
+  position: relative;
+  top: -100px;
+}
+main .categorias-tab {
+  display: flex;
+}
+main .categorias-tab a {
+  text-decoration: none;
+}
+main .categorias-tab .categorias-tab-itens {
+  padding: 10px 0px 0px 0px;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+  text-transform: uppercase;
+  color: var(--cor-01);
+  margin: 0px 2px 0px 0px;
+  background-color: var(--cor-02);
+  color: var(--cor-00);
+}
+main .categorias-tab .categorias-tab-itens:hover {
+  background-color: var(--cor-03);
+  color: var(--cor-01);
+}
+#pacotes:focus,
+#voomedida:focus {
+  background-color: var(--cor-03);
+  color: var(--cor-01);
+}
+
+main .div-conteudo-inputs > form,
+main .div-conteudo-inputs-viagens > form {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  padding: 20px;
+  align-items: center;
+}
+main .div-conteudo-inputs-viagens input,
+select {
+  width: 100%;
+  padding-right: 20px;
+  padding: 10px;
+}
+main .div-conteudo-inputs-viagens .div-inputs,main .div-conteudo-inputs .div-inputs {
+  padding: 20px;
+}
+.div-container-viagens .div-botao {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+.div-pax-geral {
+  display: none;
+}
+
+/*main .div-conteudo-inputs-viagens .div-botao {
+}*/
+
+main .estilo-select {
+  padding: 10px;
+  border: outset;
+  border: 1px solid rgba(157, 155, 155, 0.566);
+  width: 100%;
+}
+
+main label {
+  color: var(--cor-01);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+/*media query retirar a sobreposição do formulario de pesquisa*/
+@media (max-width: 980px) {
+  main .div-bg {
+    position: inherit;
+    margin-top: 100px;
+  }
+  #target-div1 .div-conteudo-inputs > form {
+    grid-template-columns: auto;
+    width: 100%;
+  }
+  main .div-conteudo-inputs-viagens > form {
+    grid-template-columns: auto;
+  }
+  main .estilo-select {
+    width: 100%;
+  }
+  .div-container-viagens .div-botao,
+  .div-conteudo-inputs .div-botao {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  main .div-conteudo-inputs-viagens .div-inputs,main .div-conteudo-inputs .div-inputs {
+    padding: 10px;
+  }
+}
+@media (max-width: 650px) {
+  main .categorias-tab {
+    flex-direction: column;
+  }
+}

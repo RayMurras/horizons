@@ -121,7 +121,6 @@ label{
   padding-bottom: 10px;
 }
 
-
 /*media query retirar a sobreposição do formulario de pesquisa*/
 @media(max-width: 980px){
   main .div-bg{
@@ -195,6 +194,16 @@ footer{
   top: 20%;
   left: 20%;
 } */
+
+/*CSS página obrigado*/
+.obrigado {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
 
 .pricing, .details-card, .included-services, .transfer, .accommodation, .insurance {
   margin-bottom: 20px;
