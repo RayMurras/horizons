@@ -159,7 +159,10 @@ main label {
 .card-bg{
   background-color: var(--cor-00);
 }
-
+.div-cards-viagens{
+  padding-top: 80px;
+  text-align: center;
+}
 
 .descricao-viagem{
   padding: 20px 40px 20px 20px;
