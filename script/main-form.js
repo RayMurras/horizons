@@ -1,3 +1,6 @@
+function inicializar(){
+  clicar('pacotes')
+}
 function clicar(valor) {
   // Definir todos os links e divs como não destacados e escondidos
   const links = ["pacotes", "voomedida", "voohotel"];
