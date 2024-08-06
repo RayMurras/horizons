@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HORIZONS</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="./../horizons/script/main-form.js"></script>
+</head>
+
+<body>
+  <header id="header-bg">
+    <div class="container">
+      <nav id="nav-bg" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="logo-horizons"><a class="navbar-brand" href="index.html">horizons</a></div>
+          <button style="color:var(--cor-00); border: 1px solid var(--cor-00);" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog/dicas.html">Dicas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/reservas.html">Reservas</a>
+              </li>
+              <!--
+            link com dropdown-menu desativado para possivel uso no futuro
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>-->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-fill">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div id="div-carousel-full" class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img1"></div>
+          <a href="index.html"><img class="d-block w-100" src="./images/carrossel-img/img-1250x415/svg/carrossel1.svg" alt="First slide"></a>
+        </div>
+        <div class="carousel-item">
+          <div class="img2"></div>
+          <a href="index.html"><img class="d-block w-100" src="./images/carrossel-img/img-1250x415/svg/carrossel2.svg" alt="Second slide"></a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+
+    <div class="div-bg container">
+      <!--categorias-->
+      <div class="categorias-tab">
+        <a id="pacotes" href="#!" class="categorias-tab-itens">
+          <div class="elemento">
+            <p>Pacotes</p>
+          </div>
+        </a>
+        <a id="voomedida" href="#!" class="categorias-tab-itens">
+          <div class="elemento">
+            <p>viagens à medida</p>
+          </div>
+        </a>
+        <a id="voohotel" href="#!" class="categorias-tab-itens">
+          <div class="elemento">
+            <p>voo + hotel</p>
+          </div>
+        </a>
+        <a href="#voocarro" class="categorias-tab-itens naovisivel">
+          <div class="elemento">
+            <p>voo + carro</p>
+          </div>
+        </a>
+      </div>
+      <!--pacotes-->
+      <div id="target-div1" class="div-container-inputs naovisivel">
+        <div class="div-conteudo-inputs">
+          <form name="form1" action="action.php" method="post">
+            <div class="div-inputs">
+              <div class="partida">
+                <label for="partida-label">Partida</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <select  name="partida" id="partida" class="estilo-select">
+                      <option value="Todos">Todos</option>
+                      <option value="lisboa">Lisboa</option>
+                      <option value="porto">Porto</option>
+                      <option value="funchal">Funchal</option>
+                      <option value="ponta-delgada">Ponta Delgada</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="continente">
+                <label for="partida-label">Continente</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <select  name="continente" id="continente" class="estilo-select">
+                      <option value="Todos">Todos</option>
+                      <option value="Europa">Europa</option>
+                      <option value="América">América</option>
+                      <option value="Ásia">Ásia</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="pais">
+                <label for="partida-label">Páis</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <select required name="partida" id="partida" class="estilo-select">
+                      <option value="Todos">Todos</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="datapartida">
+                <label for="partida-label">Data de partida</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="date" class="estilo-select" placeholder="dd-MM-aaaa">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-botao">
+              <a style="text-decoration: none; margin-top: 30px;" class="botao" href="https://www.google.com">Pesquisar</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--viagens a medida-->
+      <div id="target-div2" class="div-container-viagens  naovisivel">
+        <div class="div-conteudo-inputs-viagens">
+          <form name="form1" action="action.php" method="post">
+            <div class="div-inputs">
+              <div class="origem">
+                <label for="origem-label">Origem</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="text" list="origem" required>
+                    <datalist id="origem">
+                      <option value="Lisboa">Lis</option>
+                      <option value="Porto">OPO</option>
+                      <option value="Funchal">Fun</option>
+                      <option value="Ponta Delgada">DEL</option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="passageiros">
+                <label for="passageiros">Passageiros</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <div class="teste-focus">
+                      <a id="pass" class="passteste" href="#!">
+                        <select required>
+                          <option id="resultadoNaTela" value=""><a href="">1 Quarto, 1 Adultos, 0 Crianças</a></option>
+                        </select>
+                      </a>
+                      <div id="paxgeral" class="div-pax-geral naovisivel">
+                        <div id="fechar-div-pax-geral" class="elementoX"><a href="#!">X</a></div>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tr>
+                              <th>Quartos</th>
+                              <th>Adultos</th>
+                              <th>Crianças</th>
+                            </tr>
+                            <tr class="td-room">
+                              <td><i class="fa fa-bed"></i></td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectAdulto" required name="adults" class="custom-select adults" onclick="selecionarAdulto('selectAdulto')">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                  </select>
+                              </td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectCrianca" required name="children" class="custom-select children" onclick="selecionarCrianca('selectCrianca')">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select>
+
+                                </div>
+                              </td>
+
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="datapartida">
+                <label for="partida-label">Data de partida</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="date" class="estilo-select" placeholder="dd-MM-aaaa">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-botao">
+              <button class="botao">Pesquisar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!--voo + hotel-->
+      <div id="target-div3" class="div-container-viagens naovisivel">
+        <div class="div-conteudo-inputs-viagens voohotel">
+          <form name="form1" action="action.php" method="post">
+            <div class="div-inputs">
+              <div class="origem">
+                <label for="origem-label">Origem</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="text" list="origem" required>
+                    <datalist id="origem">
+                      <option value="Lisboa">Lis</option>
+                      <option value="Porto">OPO</option>
+                      <option value="Funchal">Fun</option>
+                      <option value="Ponta Delgada">DEL</option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="origem">
+                <label for="origem-label">Destino</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="text" list="origem" required>
+                    <datalist id="origem">
+                      <option value="Lisboa">Lis</option>
+                      <option value="Porto">OPO</option>
+                      <option value="Funchal">Fun</option>
+                      <option value="Ponta Delgada">DEL</option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="div-inputs">
+              <div class="datapartida">
+                <label for="partida-label">Data de partida</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="date" class="estilo-select" placeholder="dd-MM-aaaa">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-inputs">
+              <div class="datapartida">
+                <label for="partida-label">Data de regresso</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <input type="date" class="estilo-select" placeholder="dd-MM-aaaa">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="div-inputs">
+              <div class="passageiros">
+                <label for="passageiros">Passageiros</label>
+                <div class="input-grupo">
+                  <div class="select-wrapper">
+                    <div class="teste-focus">
+                      <a id="pass2" href="#!">
+                        <select required>
+                          <option id="resultadoNaTela2" value=""><a href="">1 Quarto, 1 Adultos, 0 Crianças</a></option>
+                        </select>
+                      </a>
+                      <div id="paxgeral2" class="div-pax-geral naovisivel">
+                        <div id="fechar-div-pax-geral2" class="elementoX"><a href="#!">X</a></div>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tr>
+                              <th>Quartos</th>
+                              <th>Adultos</th>
+                              <th>Crianças</th>
+                            </tr>
+                            <tr class="td-room">
+                              <td><i class="fa fa-bed"></i></td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectAdulto2" required name="adults" class="custom-select adults" onclick="selecionarAdulto('selectAdulto2')">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                  </select>
+                              </td>
+                              <td>
+                                <div class="select-wrapper">
+                                  <select id="selectCrianca2" required name="children" class="custom-select children" onclick="selecionarCrianca('selectCrianca2')">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                  </select>
+
+                                </div>
+                              </td>
+
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-botao">
+              <button class="botao">Pesquisar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="container">
+      <h2  class="main-titulo-cards cor-01">Viagens em Destaque</h2>
+      <!--Cards-->
+      <div class="main-cards-container">
+        <div class="card-bg card-modificacoes">
+          <a href="./pages/card-1.html">
+            <div class="div-img-card"><img src="./images/ibiza-banner.png" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">IBIZA</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">899€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="./pages/card-1.html" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+        <div class="card-bg card-modificacoes">
+          <a href="">
+            <div class="div-img-card"><img src="./images/rio.jpg" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">RIO DE JANEIRO</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">699€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="#" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+        <div class="card-bg card-modificacoes">
+          <a href="">
+            <div class="div-img-card"><img src="images/santorini.jpg" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">SANTORINI</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">646€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="#" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+        <div class="card-bg card-modificacoes">
+          <a href="">
+            <div class="div-img-card"><img src="./images/madeira-cards.jpg" alt="imagem card"></div>
+          </a>
+          <div class="descricao-viagem cor-01">
+            <h5 class="card-title">ILHA DA MADEIRA</h5>
+            <p class="card-text ">Válido até 21/09/2024</p>
+            <span>8 dias / 7 noites</span>
+            <div>
+              <span class="preco">899€</span>
+              <p>por pessoa</p>
+            </div>
+            <a href="#" class="botao">Ver Oferta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </main>
+  <div>
+    <a href="#!"><img style="width: 100%; display: block;" src="./images/especial-italia.svg" alt="imagem ibiza"></a>
+  </div>
+<!--Cards italia-->
+  <div class="main-cards-container cards-container-italia">
+    <div class="card-bg card-modificacoes card-modificacoes-italia">
+      <a href="#!">
+        <div class="div-img-card"><img src="./images/cards-italia/napoli.jpg" alt="imagem card"></div>
+      </a>
+      <div class="descricao-viagem cor-01">
+        <h5 class="card-title">NAPOLI</h5>
+        <p class="card-text ">Válido até 21/09/2024</p>
+        <span>8 dias / 7 noites</span>
+        <div>
+          <span class="preco">599€</span>
+          <p>por pessoa</p>
+        </div>
+        <a href="#!" class="botao">Ver Oferta</a>
+      </div>
+    </div>
+    <div class="card-bg card-modificacoes">
+      <a href="">
+        <div class="div-img-card"><img src="./images/cards-italia/roma-redi.jpg" alt="imagem card"></div>
+      </a>
+      <div class="descricao-viagem cor-01">
+        <h5 class="card-title">ROMA</h5>
+        <p class="card-text ">Válido até 21/09/2024</p>
+        <span>8 dias / 7 noites</span>
+        <div>
+          <span class="preco">469</span>
+          <p>por pessoa</p>
+        </div>
+        <a href="#" class="botao">Ver Oferta</a>
+      </div>
+    </div>
+    <div class="card-bg card-modificacoes">
+      <a href="">
+        <div class="div-img-card"><img src="./images/cards-italia/secilia.jpg" alt="imagem card"></div>
+      </a>
+      <div class="descricao-viagem cor-01">
+        <h5 class="card-title">SECÍLIA</h5>
+        <p class="card-text ">Válido até 21/09/2024</p>
+        <span>8 dias / 7 noites</span>
+        <div>
+          <span class="preco">999€</span>
+          <p>por pessoa</p>
+        </div>
+        <a href="#" class="botao">Ver Oferta</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div>
+    <a href="#!"><img style="width: 100%; display: block;" src="./images/banner-horizons-footer.svg" alt="imagem ibiza"></a>
+  </div>
+  <section class="section-footer">
+    <!-- Footer -->
+    <footer id="footer-bg" class="text-center text-md-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">horizons</h5>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contate-nos</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="tel:+351912345678">+351 912345678</a>
+              </li>
+              <li>
+                <a href="mailto:infor@horizons.pt">infor@horizons.pt</a>
+              </li>
+              <li>
+                Porto, Portugal
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Informações úteis</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Quem Somos</a>
+              </li>
+              <li>
+                <a href="#!">Formulário</a>
+              </li>
+              <li>
+                <a href="#!"></a>
+              </li>
+              <li>
+                <a href="#!">Política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div id="div-copy" class="text-center p-3" style="background-color:var(--cor-01); color: var(--cor-00);">
+        © 2024 Copyright:
+        <a href="#">Horizons</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

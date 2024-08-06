@@ -2,10 +2,29 @@
   font-family: 'starz-2016';
   src: url(../../tipografia/tipografia-logo/Starz-2016/starz_2016_by_629lyric-d9y7ma8.ttf);
 }
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(./../../tipografia/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(./../../tipografia/Poppins/Poppins-Bold.ttf);
+  font-weight: 700;
+  font-style: normal; 
+}
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
+}
+h2{
+  font-family: 'Poppins-Bold';
+}
+p{
+  font-family: 'Poppins-Regular';
 }
 .backgroudhover{
   background-color: var(--cor-03);
@@ -45,7 +64,8 @@ body{
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--cor-00);
+  color: var(--cor-00) !important;
+  text-decoration: none;
 }
 .botao:hover{
   background-color: var(--cor-01);
@@ -54,6 +74,53 @@ body{
 .div-container-inputs .div-botao{
   margin-top: 40px;
 }
+
+/*CSS página card-1*/
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+.banner img {
+  width: 100%;
+  height: 500px;
+}
+
+.pricing, .details-card, .included-services, .transfer, .accommodation, .insurance {
+  margin-bottom: 20px;
+}
+.details-card img, .accommodation img {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+ 
+ 
+/* .banner .details {
+  position: flex;
+  top: 20%;
+  left: 20%;
+} */
+
+/*CSS página obrigado*/
+.obrigado {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
 
 
 
@@ -78,12 +145,14 @@ body{
 .section-footer{
   color: var(--cor-00);
   text-decoration: none;
-  text-transform: none;
 }
 .section-footer a{
   text-decoration: none;
-  text-transform: none;
   color: var(--cor-03) !important;
+}
+.section-footer a:hover{
+  text-decoration: underline;
+  color: var(--cor-00) !important;
 }
 #div-copy a{
   text-transform: uppercase;
