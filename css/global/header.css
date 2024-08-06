@@ -1,9 +1,9 @@
 /*aplicando um background no header*/
-#header-bg{
+#header-bg {
   background-color: var(--cor-01) !important;
 }
-header .logo-horizons a{
-  font-family: 'starz-2016';
+header .logo-horizons a {
+  font-family: "starz-2016";
   text-transform: uppercase;
   font-size: 2rem;
   color: var(--cor-00) !important;
@@ -13,20 +13,20 @@ header .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 /*definida cor do backgroud do nav*/
- #nav-bg{
+#nav-bg {
   background-color: var(--cor-01) !important;
 }
 /*cor dos links do nav e texto com letras maiusculas*/
-header ul li a{
+header ul li a {
   color: var(--cor-00) !important;
   text-transform: uppercase;
 }
 /*aplicando underline nos links do nav*/
-header ul li a:hover{
- text-decoration: underline;
+header ul li a:hover {
+  text-decoration: underline;
 }
-@media (max-width: 650px){
-  header{
+@media (max-width: 650px) {
+  header {
     position: sticky;
     top: 0;
     width: 100%;
