@@ -1,5 +1,5 @@
-function inicializar(){
-  clicar('pacotes')
+function inicializar() {
+  clicar("pacotes");
 }
 function clicar(valor) {
   // Definir todos os links e divs como não destacados e escondidos
@@ -73,7 +73,6 @@ document
 document
   .getElementById("fechar-div-pax-geral2")
   .addEventListener("click", () => fecharTabelaPax("fechar-div-pax-geral2"));
-
 
 /*
 var qtdAdulto = 1
@@ -156,38 +155,15 @@ function selecionarCrianca(valor) {
 }
 
 // Adiciona event listeners para as mudanças nos selects
-selecionaAdulto.addEventListener('change', () => selecionarAdulto("selectAdulto"));
-selecionaCrianca.addEventListener('change', () => selecionarCrianca("selectCrianca"));
-selecionaAdulto2.addEventListener('change', () => selecionarAdulto("selectAdulto2"));
-selecionaCrianca2.addEventListener('change', () => selecionarCrianca("selectCrianca2"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+selecionaAdulto.addEventListener("change", () =>
+  selecionarAdulto("selectAdulto")
+);
+selecionaCrianca.addEventListener("change", () =>
+  selecionarCrianca("selectCrianca")
+);
+selecionaAdulto2.addEventListener("change", () =>
+  selecionarAdulto("selectAdulto2")
+);
+selecionaCrianca2.addEventListener("change", () =>
+  selecionarCrianca("selectCrianca2")
+);

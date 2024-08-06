@@ -1,14 +1,14 @@
-:root{
-  --cor-00:#ffffff;
-  --cor-01:#142230;
-  --cor-02:#3d4d58;
-  --cor-03:#6bc3b3;
-  --cor-04:#fab046;
-  --cor-05:#e7f2e9;
+:root {
+  --cor-00: #ffffff;
+  --cor-01: #142230;
+  --cor-02: #3d4d58;
+  --cor-03: #6bc3b3;
+  --cor-04: #fab046;
+  --cor-05: #e7f2e9;
 }
-.cor-00{
+.cor-00 {
   color: #ffffff;
 }
-.cor-01{
-  color:#142230 ;
+.cor-01 {
+  color: #142230;
 }
