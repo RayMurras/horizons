@@ -27,8 +27,8 @@ p{
   font-family: 'Poppins-Regular';
 }
 .backgroudhover{
-  background-color: var(--cor-03);
-  color: var(--cor-01);
+  background-color: var(--cor-03) !important;
+  color: var(--cor-01) !important;
 }
 .naovisivel{
   display: none;
