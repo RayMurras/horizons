@@ -180,7 +180,7 @@ div span.preco {
 @media (max-width: 980px) {
   main .div-bg {
     position: inherit;
-    margin-top: 100px;
+    margin-top: 30px;
   }
   #target-div1 .div-conteudo-inputs > form {
     grid-template-columns: auto;
@@ -197,12 +197,26 @@ div span.preco {
   }
   .div-container-viagens .div-botao,
   .div-conteudo-inputs .div-botao {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   main .div-conteudo-inputs-viagens .div-inputs,
   main .div-conteudo-inputs .div-inputs {
-    padding: 10px;
+    padding: 5px;
+  }
+  form label{
+    font-size: 0.9rem;
+  }
+  form input,form select{
+    padding: 5px;
+    font-size:0.9rem;
+  }
+  .elemento p{
+   font-size: 0.8rem;
+  }
+  form .botao{
+    padding: 10px 15px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 650px) {

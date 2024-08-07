@@ -3,4 +3,10 @@
 @import url(css/global/header.css);
 @import url(css/global/main.css);
 @import url(css/global/fontes.css);
+@import url(css/global/footer.css);
+
+
+
+
+/*destino*/
 @import url(css/destino/destino.css);
