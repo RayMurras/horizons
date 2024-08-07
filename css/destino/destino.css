@@ -44,7 +44,7 @@
   opacity: 0.85;
 }
 .card-destino img:hover{
-  transition: transform 0.3s ease;;
+transition: transform 0.3s ease;
  opacity: initial;
 }
 .div-img-card{
@@ -109,8 +109,8 @@
     border-radius: 10%;
   }
   .card-destino{
-    align-items: end;
     max-width: 100%;
+  
   }
   .card-div-container-destino{
     grid-template-columns: auto;

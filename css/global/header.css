@@ -21,9 +21,31 @@ header ul li a {
   color: var(--cor-00) !important;
   text-transform: uppercase;
 }
+header ul li a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: var(--cor-00) !important;
+  display: block;
+}
+header ul li a:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
 /*aplicando underline nos links do nav*/
-header ul li a:hover {
-  text-decoration: underline;
+
+@media (max-width: 990px) {
+  header ul li a::after {
+    display: none;
+  }
+  header ul li a{
+    display: inline-block !important;
+    padding: 10px !important;
+    border-radius:5px;
+  }
+  header ul li a:hover{
+    background-color: var(--cor-03);
+  }
 }
 @media (max-width: 650px) {
   header {

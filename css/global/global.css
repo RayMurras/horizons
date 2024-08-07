@@ -127,26 +127,7 @@ body {
   background-color: var(--cor-01) !important;
 }
 
-.section-footer {
-  color: var(--cor-00);
-  text-decoration: none;
-}
-.section-footer a {
-  text-decoration: none;
-  color: var(--cor-03) !important;
-}
-.section-footer a:hover {
-  text-decoration: underline;
-  color: var(--cor-00) !important;
-}
-#div-copy a {
-  text-transform: uppercase;
-  color: var(--cor-00) !important;
-}
 
-footer {
-  width: 100%;
-}
 
 /*media queries*/
 @media (max-width: 650px) {
