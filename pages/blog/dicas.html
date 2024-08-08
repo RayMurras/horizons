@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DICAS | HORIZONS</title>
-  <link rel="stylesheet" href="./../style.css">
+  <link rel="stylesheet" href="./../../style.css">
   <link rel="stylesheet" href="./styleBlog.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script defer src="./../script/main-form.js"></script>
@@ -13,7 +13,7 @@
   
 </head>
 
-<body>
+<body id="dicas">
   <header id="header-bg">
     <div class="container">
       <nav id="nav-bg" class="navbar navbar-expand-lg bg-body-tertiary">
@@ -34,7 +34,7 @@
                 <a class="nav-link" href="./../blog/dicas.html">Dicas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./../pages/reservas.html">Reservas</a>
+                <a class="nav-link" href="./../reservas.html">Reservas</a>
               </li>
               </li>
             </ul>
@@ -45,64 +45,58 @@
   </header>
 
 <!-- FOTO PRINCIPAL -->
-<img style="width: 100%;" src="./../images/montanhas.jpg" alt="">>
-<!--teste essa imagem -->
-<!--<img style="width: 100%;" src="./../images/teste.svg" alt="">-->
+<div class="banner">
+  <img style="width: 100%;" src="./../../images/montanhas.jpg" alt="">
+  <div class="details">
+      <h1>Dicas & Roteiros </h1>
+  </div>
+</div>
+
 <br>
 <!-- Roteiros: 10 dias em...(Lugares para se visitar) -->
 <h1 class="text-center">10 dias em...</h1>
 <br>
 
-<!-- rota1 -->
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 19rem;">
-        <img src="./../images\ilha-madeira.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">ILHA DA MADEIRA</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href= "./roteiro1.html" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- rota2 -->
-    <div class="col">
-      <div class="card" style="width: 19rem;">
-        <img src="./../images\santorini.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">SANTORINI</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./roteiro2.html" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- rota3 -->
-    <div class="col">
-      <div class="card" style="width: 19rem;">
-        <img src="./../images\rio.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">RIO DE JANEIRO</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./roteiro3.html" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-
-<!-- rota4 -->
-    <div class="col">
-      <div class="card" style="width: 19rem;">
-        <img src="./../images\ibiza-banner.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">IBIZA</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="./roteiro4.html" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
+<div class="main-cards-container cards-container-rota">
+  <div class="card-bg card-modificacoes card-modificacoes-rota">
+    <a href="./rotaMadeira.html">
+      <div class="div-img-card"><img src="./../../images\ilha-madeira.jpg" alt="imagem card"></div>
+    </a>
+    <div class="descricao-viagem cor-01">
+      <h5 class="card-title">ILHA DA MADEIRA</h5>
+      
+      <a href="./rotaMadeira.html" class="botao">Saiba mais</a>
     </div>
   </div>
+  <div class="card-bg card-modificacoes card-modificacoes-rota">
+    <a href="./rotaSantorini.html">
+      <div class="div-img-card"><img src="./../../images\santorini.jpg" alt="imagem card"></div>
+    </a>
+    <div class="descricao-viagem cor-01">
+      <h5 class="card-title">SANTORINI</h5>
+      
+      <a href="./rotaSantorini.html" class="botao">Saiba mais</a>
+    </div>
+  </div>
+  <div class="card-bg card-modificacoes card-modificacoes-rota">
+    <a href="./rotaRio.html">
+      <div class="div-img-card"><img src="./../../images\rio.jpg" alt="imagem card"></div>
+    </a>
+    <div class="descricao-viagem cor-01">
+      <h5 class="card-title">RIO DE JANEIRO</h5>
+      <a href="./rotaRio.html" class="botao">Saiba mais</a>
+    </div>
+  </div>
+  <div class="card-bg card-modificacoes card-modificacoes-rota">
+    <a href="./rotaIbiza.html">
+      <div class="div-img-card"><img src="./../../images\ibiza-banner.png" alt="imagem card"></div>
+    </a>
+    <div class="descricao-viagem cor-01">
+      <h5 class="card-title">IBIZA</h5>
+      <a href="./rotaIbiza.html" class="botao">Saiba mais</a>
+    </div>
+  </div>
+</div>
 </div>
 <br>
 
@@ -153,7 +147,7 @@
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-8 offset-md-2">
+    <div class="col-md-8 offset-md-2 comment-area">
       <h2>Deixe seu Comentário</h2>
       <form>
         <div class="form-group">
@@ -171,9 +165,14 @@
           <textarea class="form-control" id="comment" rows="5" placeholder="Escreva seu comentário" required></textarea>
         </div>
         <br>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" class="btn btn-primary" style="background-color:var(--cor-04);border: 1px solid var(--cor-04);" data-toggle="modal" data-target="#exampleModal">
           Enviar
         </button>
+      </form>
+    </div>
+  </div>
+</div>
+
         
           <!-- Pop up -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -181,15 +180,13 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Comentário</h5>
-                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                      <span aria-hidden="true">&times;</span>
-                    </button>  -->
+                    
                   </div>
                   <div class="modal-body">
                     Seu comentário foi adicionado com sucesso.
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" style="background-color:var(--cor-04);border: 1px solid var(--cor-04);"  data-dismiss="modal">Fechar</button>
                     
                   </div>
                 </div>
@@ -201,6 +198,10 @@
   </div>
 </div>
 <br>
+
+<div>
+  <a href="#!"><img style="width: 100%; display: block;" src="./../../images/banner-horizons-footer.svg" alt="imagem ibiza"></a>
+</div>
 
     <section class="section-footer">
         <!-- Footer -->
@@ -275,12 +276,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-    <!-- Paginas de roteiro -->
-    <script src="./roteiro1.html"></script>
-    <script src="./roteiro2.html"></script>
-    <script src="./roteiro3.html"></script>
-    <script src="./roteiro4.html"></script>
-
-
 </html>
