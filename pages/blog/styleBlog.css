@@ -6,7 +6,7 @@
     }
     
     .card {
-      background-color: #6bc3b3;
+      background-color: #fdffff;
       margin-bottom: 30px;
     }
 
@@ -62,4 +62,13 @@
       padding: 20px; 
       border-radius: 8px; 
       color: white; 
+    }
+
+    .roteiro {
+      margin: 2rem;
+      
+  }
+    h2,h4 {
+      font-family: "Poppins-Bold";
+      padding-bottom: 5px;
     }
