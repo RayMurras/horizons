@@ -48,6 +48,7 @@ main .categorias-tab .categorias-tab-itens:hover {
   background-color: var(--cor-03);
   color: var(--cor-01);
 }
+
 main .div-conteudo-inputs > form {
   align-items: center;
 }
@@ -79,7 +80,7 @@ main .div-conteudo-inputs .div-inputs {
 
 main .estilo-select {
   padding: 10px;
-  border: outset;
+  outline: none;
   border: 1px solid rgba(157, 155, 155, 0.566);
   width: 100%;
 }
@@ -227,6 +228,12 @@ div span.preco {
 @media (max-width: 650px) {
   main .categorias-tab {
     flex-direction: column;
+  }
+  .div-cards-viagens {
+    padding-top: 20px;
+  }
+  main{
+    padding-bottom: 80px;
   }
 }
 

@@ -1,25 +1,47 @@
+
 function inicializar() {
   clicar("pacotes");
 }
+
 function clicar(valor) {
-  // Definir todos os links e divs como não destacados e escondidos
   const links = ["pacotes", "voomedida", "voohotel"];
   const divs = ["target-div1", "target-div2", "target-div3"];
 
-  links.forEach((id) => {
-    document.getElementById(id).classList.remove("backgroudhover");
-  });
+  // Encontre a div atualmente visível
+  const currentDiv = divs.find(div => document.getElementById(div).classList.contains("visivel"));
 
-  divs.forEach((id) => {
-    document.getElementById(id).classList.add("naovisivel");
-  });
+  // Se houver uma div visível, aplique a animação de subida e depois exiba a nova
+  if (currentDiv) {
+    const currentElement = document.getElementById(currentDiv);
+    currentElement.classList.add("subindo");
 
-  // Destacar o link clicado e mostrar a div correspondente
+    // Espera a transição de subida terminar antes de esconder a atual e mostrar a próxima
+    setTimeout(() => {
+      currentElement.classList.remove("visivel", "subindo");
+      currentElement.classList.add("naovisivel");
+
+      // Mostrar o próximo conteúdo
+      showNewContent(valor, links, divs);
+    }, 500); // Tempo deve coincidir com a duração da transição CSS
+  } else {
+    // Se não houver div visível (inicialização), exibe o primeiro conteúdo diretamente
+    showNewContent(valor, links, divs);
+  }
+}
+
+function showNewContent(valor, links, divs) {
   if (links.includes(valor)) {
     const link = document.getElementById(valor);
     const index = links.indexOf(valor);
+
+    // Destacar o link clicado
+    links.forEach(id => document.getElementById(id).classList.remove("backgroudhover"));
     link.classList.add("backgroudhover");
-    document.getElementById(divs[index]).classList.remove("naovisivel");
+
+    // Mostrar a div correspondente
+    const newDiv = document.getElementById(divs[index]);
+    newDiv.classList.remove("naovisivel");
+    newDiv.classList.add("visivel");
   }
 }
 
@@ -34,6 +56,20 @@ document
   .getElementById("voohotel")
   .addEventListener("click", () => clicar("voohotel"));
 
+window.onload = inicializar;
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************** */
 function abrirPassageiros(valor) {
   // Definir todos os links e divs como não destacados e escondidos
   const links = ["pass", "pass2"];
