@@ -92,7 +92,7 @@
         </div>
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Endereço de cobrança</h4>
-          <form class="needs-validation" novalidate="">
+          <form id="reservasForm" class="needs-validation" novalidate="">
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">Nome</label>
@@ -260,7 +260,6 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase">horizons</h5>
           </div>
-          <!--Grid column-->
 
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -278,7 +277,6 @@
               </li>
             </ul>
           </div>
-          <!--Grid column-->
 
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -349,6 +347,21 @@
           }, false)
         })
     })()
+  </script>
+
+  <script>
+    // Função para limpar o formulário
+    function resetForm() {
+      document.getElementById("reservasForm").reset();
+      // Remove as classes de validação, se necessário
+      document.getElementById("reservasForm").classList.remove('was-validated');
+    }
+  
+    // Adicionar evento de fechamento ao modal
+    var reservarModal = document.getElementById('reservarModal');
+    reservarModal.addEventListener('hidden.bs.modal', function (event) {
+      resetForm(); // Chama a função de limpar o formulário quando o modal é fechado
+    });
   </script>
 </body>
 
