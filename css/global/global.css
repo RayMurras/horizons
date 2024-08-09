@@ -29,6 +29,17 @@ p {
   background-color: var(--cor-03) !important;
   color: var(--cor-01) !important;
 }
+input, optgroup, select{
+  padding: 10px;
+  width: 100%;
+  gap: 10px;
+}
+.div-inputs{
+  padding: 20px;
+}
+form{
+  padding: 20px;
+}
 /*************************************************************************/
 
 /* Classe para ocultar o conteúdo com transição */
@@ -143,12 +154,9 @@ body {
   height: 100%;
   text-align: center;
 }
-
 #footer-bg {
   background-color: var(--cor-01) !important;
 }
-
-
 
 /*media queries*/
 @media (max-width: 650px) {
