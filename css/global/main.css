@@ -2,7 +2,6 @@ main {
   box-sizing: border-box;
   padding-bottom: 150px;
 }
-
 /*formulario pesquiza de destino*/
 main .div-bg {
   background-color: var(--cor-03);
@@ -42,12 +41,6 @@ main .categorias-tab .categorias-tab-itens:hover {
   background-color: var(--cor-03);
   color: var(--cor-01);
 }
-#pacotes:focus,
-#voomedida:focus,
-#voohotel:focus {
-  background-color: var(--cor-03);
-  color: var(--cor-01);
-}
 
 main .div-conteudo-inputs > form {
   align-items: center;
@@ -56,26 +49,19 @@ main .div-conteudo-inputs > form,
 main .div-conteudo-inputs-viagens > form {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  padding: 20px;
 }
 .voohotel > form {
   grid-template-columns: repeat(3, auto) !important;
 }
 
-main .div-conteudo-inputs-viagens input,
-select {
-  width: 100%;
-  padding-right: 20px;
+.div-container-viagens .div-botao {
+  margin-top: 56px;
+  align-self: flex-start;
+  justify-content: center;
   padding: 10px;
 }
-main .div-conteudo-inputs-viagens .div-inputs,
-main .div-conteudo-inputs .div-inputs {
-  padding: 20px;
-}
-.div-container-viagens .div-botao {
-  margin-top: 30px;
-  padding-left: 20px;
-  align-self: center;
+.div-botao{
+  justify-self: center;
 }
 
 main .estilo-select {
@@ -177,11 +163,11 @@ div span.preco {
   box-sizing: border-box;
 }
 
-/*media query retirar a sobreposição do formulario de pesquisa*/
+/*********************media query***************************************/
 @media (max-width: 1200px) {
   .main-cards-container > .card-modificacoes {
     grid-template-columns: auto;
-}
+  }
 }
 @media (max-width: 980px) {
   main .div-bg {
@@ -210,37 +196,39 @@ div span.preco {
   main .div-conteudo-inputs .div-inputs {
     padding: 5px;
   }
-  form label{
+  form label {
     font-size: 0.9rem;
   }
-  form input,form select{
+  form input,
+  form select {
     padding: 5px;
-    font-size:0.9rem;
+    font-size: 0.9rem;
   }
-  .elemento p{
-   font-size: 0.8rem;
+  .elemento p {
+    font-size: 0.8rem;
   }
-  form .botao{
+  form .botao {
     padding: 10px 15px;
     font-size: 1rem;
   }
 }
 @media (max-width: 650px) {
+  main {
+    padding-bottom: 80px;
+  }
   main .categorias-tab {
     flex-direction: column;
   }
   .div-cards-viagens {
     padding-top: 20px;
   }
-  main{
-    padding-bottom: 80px;
-  }
+ 
 }
 
 @media (max-width: 780px) {
   .main-cards-container {
     grid-template-columns: auto;
-}
+  }
 
   .card-modificacoes img {
     max-width: 100%;
@@ -251,4 +239,3 @@ div span.preco {
     border-radius: 5px 5px 0px 0px;
   }
 }
-
