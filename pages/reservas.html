@@ -51,35 +51,35 @@
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 class="my-0">Nome do produto</h6>
+                <h6 class="my-0">Pacote de viagem</h6>
                 <small class="text-body-secondary">Breve descrição</small>
               </div>
-              <span class="text-body-secondary">$12</span>
+              <span class="text-body-secondary">899 €</span>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 class="my-0">Segundo produto</h6>
+                <h6 class="my-0">Seguro de viagem</h6>
                 <small class="text-body-secondary">Breve descrição</small>
               </div>
-              <span class="text-body-secondary">$8</span>
+              <span class="text-body-secondary">100 €</span>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 class="my-0">Terceiro item</h6>
+                <h6 class="my-0">Transfers</h6>
                 <small class="text-body-secondary">Breve descrição</small>
               </div>
-              <span class="text-body-secondary">$5</span>
+              <span class="text-body-secondary">200 €</span>
             </li>
             <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
               <div class="text-success">
                 <h6 class="my-0">Código promocional</h6>
-                <small>EXAMPLECODE</small>
+                <small>HORIZON</small>
               </div>
-              <span class="text-success">−$5</span>
+              <span class="text-success">−100 €</span>
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>Total (USD)</span>
-              <strong>$20</strong>
+              <strong>1.099 €</strong>
             </li>
           </ul>
 
@@ -92,7 +92,7 @@
         </div>
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Endereço de cobrança</h4>
-          <form class="needs-validation" novalidate="">
+          <form id="reservasForm" class="needs-validation" novalidate="">
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">Nome</label>
@@ -104,7 +104,7 @@
 
               <div class="col-sm-6">
                 <label for="lastName" class="form-label">Apelido</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <input type="text" class="form-control" id="lastName" placeholder="Informe seu apelido" value="" required="">
                 <div class="invalid-feedback">
                   Sobrenome válido é obrigatório.
                 </div>
@@ -120,15 +120,10 @@
 
               <div class="col-12">
                 <label for="address" class="form-label">Morada</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <input type="text" class="form-control" id="address" placeholder="" required="">
                 <div class="invalid-feedback">
-                  Please enter your shipping address.
+                  Informe sua morada.
                 </div>
-              </div>
-
-              <div class="col-12">
-                <label for="address2" class="form-label">Morada 2 <span class="text-body-secondary">(Opcional)</span></label>
-                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
               </div>
 
               <div class="col-md-5">
@@ -138,7 +133,7 @@
                   <option>Portugal</option>
                 </select>
                 <div class="invalid-feedback">
-                  Please select a valid country.
+                  Selecione um país válido.
                 </div>
               </div>
 
@@ -153,7 +148,7 @@
                   <option>Porto</option>
                 </select>
                 <div class="invalid-feedback">
-                  Please provide a valid state.
+                  Selecione um distrito válido.
                 </div>
               </div>
 
@@ -161,7 +156,7 @@
                 <label for="zip" class="form-label">Código Postal</label>
                 <input type="text" class="form-control" id="zip" placeholder="" required="">
                 <div class="invalid-feedback">
-                  Zip code required.
+                  Código postal é obrigatório.
                 </div>
               </div>
             </div>
@@ -215,7 +210,7 @@
                 <label for="cc-cvv" class="form-label">CVV</label>
                 <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
                 <div class="invalid-feedback">
-                  Security code required
+                  Código de segurança é obrigatório.
                 </div>
               </div>
             </div>
@@ -260,7 +255,6 @@
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase">horizons</h5>
           </div>
-          <!--Grid column-->
 
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -278,7 +272,6 @@
               </li>
             </ul>
           </div>
-          <!--Grid column-->
 
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -349,6 +342,21 @@
           }, false)
         })
     })()
+  </script>
+
+  <script>
+    // Função para limpar o formulário
+    function resetForm() {
+      document.getElementById("reservasForm").reset();
+      // Remove as classes de validação, se necessário
+      document.getElementById("reservasForm").classList.remove('was-validated');
+    }
+  
+    // Adicionar evento de fechamento ao modal
+    var reservarModal = document.getElementById('reservarModal');
+    reservarModal.addEventListener('hidden.bs.modal', function (event) {
+      resetForm(); // Chama a função de limpar o formulário quando o modal é fechado
+    });
   </script>
 </body>
 
