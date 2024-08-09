@@ -29,15 +29,17 @@ p {
   background-color: var(--cor-03) !important;
   color: var(--cor-01) !important;
 }
-input, optgroup, select{
+input,
+optgroup,
+select {
   padding: 10px;
   width: 100%;
   gap: 10px;
 }
-.div-inputs{
+.div-inputs {
   padding: 20px;
 }
-form{
+form {
   padding: 20px;
 }
 /*************************************************************************/
@@ -46,7 +48,7 @@ form{
 .naovisivel {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.1s ease, visibility 0.1s ease;
   position: absolute;
   top: 20px; /* Pode ajustar conforme o layout */
 }
@@ -55,16 +57,15 @@ form{
 .visivel {
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.1s ease, visibility 0.1s ease;
   top: 0;
 }
 /* Animação de subida */
 .subindo {
-  transition: top 0.2s ease, opacity 0.2s ease;
+  transition: top 0.1s ease, opacity 0.1s ease;
   top: -20px; /* Ajusta conforme o layout */
   opacity: 0;
 }
-
 
 /*************************************************************************/
 html,
