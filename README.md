@@ -1,6 +1,17 @@
-# Projeto HORIZONS TRAVEL AGENCY
 
-# Sobre o projeto
+# 🌍 Projeto HORIZONS TRAVEL AGENCY
+
+Este repositório contém o projeto desenvolvido pelo **Grupo 4** no contexto do módulo de **Desenvolvimento Web - Cliente Side** do curso do **Cesae Digital**. O nosso objetivo foi criar um **site de agência de viagens** utilizando as tecnologias aprendidas ao longo do módulo.
+
+
+## 🚀 Desafios
+
+O maior desafio enfrentado pelo grupo foi o uso do **Git** e **GitHub** para o controle de versão e colaboração em equipe. Superar essa barreira foi fundamental para o sucesso do projeto, permitindo um trabalho colaborativo eficiente e organizado.
+
+
+## 📈 Resultados
+
+O resultado é um site funcional e esteticamente agradável, que reflete os conhecimentos adquiridos durante o módulo. Este projeto é um marco importante em nossa jornada de aprendizado em desenvolvimento web.
 
 <a href="https://raymurras.github.io/horizons/" target="_blank">HORIZONS TRAVEL AGENCY</a>
 
