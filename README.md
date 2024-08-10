@@ -30,8 +30,13 @@ O jogo **Mata Mosquito** é intuitivamente nomeado conforme seu objetivo princip
   <div style="display: inline-block;">
    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="html5">
   </div>
+  <div style="display: inline-block;">
+   <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap">
+  </div>
  
 
 # Autores
 
-<a href="https://www.linkedin.com/in/geffersoncosta/" target="_blank">Gefferson Costa</a>
+ <a href="https://www.linkedin.com/in/rayannemurras/" target="_blank">Rayanne Murras</a>
+ <a href="https://www.linkedin.com/in/fernando-santos-rodrigues" target="_blank">Fernando Rodrigues</a>
+ <a href="https://www.linkedin.com/in/geffersoncosta/" target="_blank">Gefferson Costa</a>
