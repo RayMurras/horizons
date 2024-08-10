@@ -15,7 +15,7 @@ O resultado é um site funcional e esteticamente agradável, que reflete os conh
 
 <a href="https://raymurras.github.io/horizons/" target="_blank">HORIZONS TRAVEL AGENCY</a>
 
-O jogo **Mata Mosquito** é intuitivamente nomeado conforme seu objetivo principal: eliminar mosquitos. Ele oferece uma variedade de desafios através de três modos de dificuldade: fácil, médio e difícil. Cada um desses modos proporciona uma experiência única, permitindo aos jogadores escolherem o nível de desafio que desejam enfrentar.
+
 
 ## Layout mobile
  ![Mobile 1](https://github.com/GeffersonCosta/Jogo-Mata-Mosquito/blob/main/assets/img1.jpg)
