@@ -15,7 +15,7 @@ O jogo **Mata Mosquito** é intuitivamente nomeado conforme seu objetivo princip
 ## Layout web
   ![Web 2](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/web-img-index1.png)
   ![Web 2](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/web-img-index-cads.png)
-
+  ![Web 2](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/cads-italia.png)
 
 
 # Tecnologias utilizadas
