@@ -1,5 +1,4 @@
 # Projeto HORIZONS TRAVEL AGENCY
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/GeffersonCosta/Jogo-Mata-Mosquito/blob/main/LICENSE) 
 
 # Sobre o projeto
 
