@@ -32,8 +32,6 @@ O jogo **Mata Mosquito** é intuitivamente nomeado conforme seu objetivo princip
   </div>
  
 
-# Autor
+# Autores
 
-Gefferson Costa
-
-https://www.linkedin.com/in/geffersoncosta/
+<a href="https://www.linkedin.com/in/geffersoncosta/" target="_blank">Gefferson Costa</a>
