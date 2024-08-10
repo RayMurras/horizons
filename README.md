@@ -18,9 +18,9 @@ O resultado é um site funcional e esteticamente agradável, que reflete os conh
 
 
 ## Layout mobile
- ![Mobile 1](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/mobile1.jpg)
-  ![Mobile 1](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/mobile2.jpg)
-  ![Mobile 1](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/mobile3.jpg)
+  ![Mobile 1](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/mobile1-redi.jpg)
+  ![Mobile 1](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/mobile2-redi.jpg)
+  ![Mobile 1](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/mobile3-redi.jpg)
  
 ## Layout web
   ![Web 2](https://github.com/RayMurras/horizons/blob/main/images/imgs-readme/web-img-index1.png)
