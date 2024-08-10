@@ -37,7 +37,7 @@ O jogo **Mata Mosquito** é intuitivamente nomeado conforme seu objetivo princip
 
 # Autores
 
-    <div style="display: inline-block; text-decoration: none;">
+  <div style="display: inline-block; text-decoration: none;">
     <a style="color: #ffffff;" href="https://www.linkedin.com/in/rayannemurras/" target="_blank">Rayanne Murras</a>
   </div>
   <div style="display: inline-block; text-decoration: none;">
@@ -46,3 +46,4 @@ O jogo **Mata Mosquito** é intuitivamente nomeado conforme seu objetivo princip
   <div style="display: inline-block; text-decoration: none;">
     <a style="color: #ffffff;" href="https://www.linkedin.com/in/geffersoncosta/" target="_blank">Gefferson Costa</a>
   </div>
+
